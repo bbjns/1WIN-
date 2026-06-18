@@ -1,0 +1,521 @@
+<!doctype html>
+<!DOCTYPE html>
+
+<html data-force-lang="ko" lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#f3f6fb" name="theme-color"/>
+<title>1WIN 스포츠 예측 마켓</title>
+<meta content="1WIN 全球体育预测市场入口，支持多语言市场卡片浏览、热门赛事主题、新用户礼遇、VIP 权益与责任娱乐信息。" name="description"/>
+<meta content="index,follow" name="robots"/>
+<meta content="1WIN Sports Prediction Markets" property="og:title"/>
+<meta content="Explore sports, esports and trending event prediction markets with multilingual access, member offers, VIP benefits and responsible entertainment information." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="1WIN Markets" name="apple-mobile-web-app-title"/>
+<meta content="telephone=no" name="format-detection"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<style>
+:root{--bg:#f3f6fb;--card:#fff;--card2:#f7f9fc;--ink:#101828;--muted:#667085;--line:#e6ebf2;--chip:#e9eef5;--blue:#0a7cff;--blue2:#4ca3ff;--green:#14b866;--green-bg:#e1f7ea;--red:#ef4b4b;--red-bg:#ffeceb;--dark:#0d1730;--radius:28px;--shadow:0 24px 64px rgba(16,24,40,.08);--max:1220px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC",Arial,sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}.wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto}.top{position:sticky;top:0;z-index:50;background:rgba(243,246,251,.92);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;min-width:0}.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#0879ff,#5bb8ff);display:grid;place-items:center;color:#fff;font-weight:950;letter-spacing:-1px;box-shadow:0 14px 28px rgba(10,124,255,.24)}.brand-text strong{font-size:18px;display:block}.brand-text span{font-size:12px;color:var(--muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:280px;margin-top:2px}.nav-links{display:flex;align-items:center;gap:8px}.nav-links a{font-size:14px;font-weight:750;color:#475467;padding:10px 12px;border-radius:999px}.nav-links a:hover{background:var(--chip);color:#111827}.nav-actions{display:flex;gap:10px;align-items:center}.age{font-weight:900;font-size:13px;padding:10px 12px;border-radius:999px;background:#fff6d9;color:#8a6200;border:1px solid #ffe8a3}.language{position:relative}.language:after{content:"⌄";position:absolute;right:13px;top:50%;transform:translateY(-55%);color:#667085;pointer-events:none}select{appearance:none;border:1px solid var(--line);background:#fff;color:#111827;border-radius:999px;padding:11px 34px 11px 14px;font-weight:700;outline:none;max-width:160px}.hero{padding:42px 0 34px}.hero-grid{display:grid;grid-template-columns:.94fr 1.06fr;gap:32px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:#0a62c9;font-weight:900;letter-spacing:.13em;font-size:12px;text-transform:uppercase;margin-bottom:18px}.spark{width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 0 7px rgba(20,184,102,.12)}h1{font-size:clamp(34px,4.4vw,58px);line-height:1.08;letter-spacing:-1.8px;margin:0 0 18px;max-width:760px}.lead{font-size:clamp(16px,1.55vw,20px);line-height:1.72;color:#475467;margin:0 0 26px;max-width:620px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:15px 21px;font-weight:900;border:1px solid transparent;transition:.2s}.btn-main{background:var(--blue);color:#fff;box-shadow:0 18px 34px rgba(10,124,255,.24)}.btn-main:hover{transform:translateY(-1px);background:#006fe8}.btn-light{background:#fff;color:#1d2939;border-color:var(--line)}.btn-light:hover{background:#f8fafc}.trust{display:flex;gap:9px;flex-wrap:wrap}.trust span{font-size:13px;color:#475467;background:#fff;border:1px solid var(--line);padding:8px 10px;border-radius:999px}.market-board{background:#fff;border:1px solid var(--line);border-radius:30px;padding:18px;box-shadow:var(--shadow);min-width:0}.board-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}.board-title strong{display:block;font-size:20px}.board-title span{display:block;color:#667085;font-size:13px;margin-top:4px}.live{font-size:12px;font-weight:950;color:#067647;background:#dcfae6;border:1px solid #abefc6;border-radius:999px;padding:8px 10px;white-space:nowrap}.chips{display:flex;gap:10px;overflow-x:auto;padding:2px 2px 12px;margin-bottom:4px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chip{border:0;background:var(--chip);color:#344054;font-size:14px;font-weight:900;border-radius:12px;padding:12px 14px;white-space:nowrap}.chip.active{background:var(--blue);color:#fff}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.mcard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:0 14px 30px rgba(16,24,40,.06);min-height:246px;display:flex;flex-direction:column}.mhead{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}.micon{width:44px;height:44px;border-radius:14px;flex:0 0 auto;display:grid;place-items:center;background:linear-gradient(135deg,#0c7cff,#73c1ff);color:#fff;font-size:23px}.mmeta{font-size:13px;color:#667085;margin-top:5px}.question{font-size:17px;font-weight:950;line-height:1.28;letter-spacing:-.2px}.choices{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto}.choice{border-radius:12px;padding:11px 12px;font-weight:900;font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:10px}.yes{background:var(--green-bg);color:#067647}.no{background:var(--red-bg);color:#b42318}.choice em{font-style:normal;font-size:12px;opacity:.75}.card-foot{display:flex;justify-content:space-between;gap:10px;color:#667085;font-size:12px;margin-top:12px}.enter-card{margin-top:14px;display:flex;justify-content:center}.enter-card a{width:100%;text-align:center;background:#111827;color:white;border-radius:16px;padding:13px 14px;font-weight:950}.section{padding:30px 0}.section-head{max-width:780px;margin-bottom:22px}.kicker{font-size:12px;font-weight:950;letter-spacing:.14em;color:#0a62c9;text-transform:uppercase;margin-bottom:10px}.section h2{font-size:clamp(30px,4.2vw,46px);line-height:1.1;letter-spacing:-1.2px;margin:0 0 12px}.section p{color:#475467;line-height:1.72;margin:0}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.info{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 12px 34px rgba(16,24,40,.04)}.info .ico{width:44px;height:44px;border-radius:15px;background:#edf5ff;color:#0a7cff;display:grid;place-items:center;font-size:21px;margin-bottom:15px}.info h3{margin:0 0 9px;font-size:20px;letter-spacing:-.3px}.info p{font-size:14px;color:#667085}.steps{background:#101828;color:#fff;border-radius:30px;padding:30px;display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;align-items:center;overflow:hidden;position:relative}.steps:after{content:"";position:absolute;width:360px;height:360px;right:-120px;top:-120px;background:rgba(10,124,255,.24);filter:blur(35px);border-radius:50%}.steps h2,.steps p{position:relative;z-index:1}.steps p{color:#cbd5e1}.step-list{position:relative;z-index:1;display:grid;gap:12px}.step{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:16px;display:flex;gap:13px;align-items:center}.num{width:32px;height:32px;border-radius:999px;background:#0a7cff;display:grid;place-items:center;font-weight:950;flex:none}.offer-vip{display:grid;grid-template-columns:1fr 1fr;gap:16px}.promo{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.promo h3{font-size:28px;line-height:1.14;letter-spacing:-.8px;margin:0 0 14px}.promo p{color:#667085}.promo.good{background:linear-gradient(135deg,#fff,#edf7ff)}.promo.vip{background:linear-gradient(135deg,#fff,#f7f1ff)}.safe{background:#fff8e6;border:1px solid #ffe3a3;border-radius:28px;padding:24px;display:flex;gap:16px;align-items:flex-start}.safe-mark{width:56px;height:56px;border-radius:18px;background:#fff0bd;border:1px solid #ffd66e;display:grid;place-items:center;font-weight:950;color:#7a4e00;flex:none}.safe h3{margin:0 0 8px;font-size:22px}.safe p{color:#6f5a27}.foot{border-top:1px solid var(--line);padding:34px 0;color:#667085;font-size:13px}.foot-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot-links{display:flex;gap:14px;flex-wrap:wrap}.foot a{font-weight:800;color:#344054}@media(max-width:1020px){.hero-grid{grid-template-columns:1fr}.market-board{order:0}.cards{grid-template-columns:1fr 1fr}.grid3,.offer-vip{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.nav-links{display:none}}@media(max-width:680px){.wrap{width:calc(100% - 22px)}.nav{height:66px}.brand-text span{max-width:170px}.logo{width:38px;height:38px}.age{display:none}select{max-width:132px;padding:10px 32px 10px 12px}.hero{padding-top:20px}h1{font-size:34px;letter-spacing:-1.2px}.lead{font-size:16px}.btn{width:100%}.cards{grid-template-columns:1fr}.mcard{min-height:220px}.market-board{padding:14px;border-radius:24px}.board-top{align-items:flex-start}.grid3{gap:12px}.safe{display:block}.safe-mark{margin-bottom:12px}.foot-grid{display:block}.foot-links{margin-top:12px}}
+
+@media(max-width:680px){
+  .hero-grid{gap:18px}
+  .hero .wrap.hero-grid > div:first-child{order:-1}
+  .market-board{order:0;margin-top:4px}
+  .hero{padding-top:16px;padding-bottom:24px}
+  .eyebrow{margin-bottom:12px}
+  h1{font-size:32px;line-height:1.12;margin-bottom:12px}
+  .lead{font-size:15px;line-height:1.58;margin-bottom:16px}
+  .cta{margin-bottom:12px}
+  .trust{display:none}
+  .board-top{margin-bottom:10px}
+  .board-title strong{font-size:18px}
+  .board-title span{font-size:12px}
+  .chips{gap:8px;padding-bottom:10px}
+  .chip{font-size:13px;padding:10px 12px}
+  .mcard{min-height:176px;padding:14px}
+  .mhead{gap:10px;margin-bottom:10px}
+  .micon{width:38px;height:38px;border-radius:12px;font-size:20px}
+  .question{font-size:15px;line-height:1.32}
+  .mmeta{font-size:12px}
+  .choices{gap:7px}
+  .choice{padding:9px 10px;font-size:13px}
+  .card-foot{font-size:11px;margin-top:10px}
+  #marketCards .mcard:nth-child(n+3){display:none}
+  .enter-card{margin-top:12px}
+  .enter-card a{padding:14px 14px;border-radius:14px}
+  body{padding-bottom:74px}
+  .mobile-fixed-cta{display:flex}
+}
+.mobile-fixed-cta{
+  display:none;
+  position:fixed;
+  left:12px;
+  right:12px;
+  bottom:12px;
+  z-index:60;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(18px);
+  border:1px solid var(--line);
+  border-radius:20px;
+  box-shadow:0 18px 44px rgba(16,24,40,.18);
+  padding:10px;
+  gap:10px;
+  align-items:center;
+}
+.mobile-fixed-cta span{
+  flex:1;
+  font-size:12px;
+  color:#667085;
+  line-height:1.25;
+  font-weight:700;
+}
+.mobile-fixed-cta a{
+  flex:none;
+  background:var(--blue);
+  color:#fff;
+  border-radius:14px;
+  padding:12px 16px;
+  font-weight:950;
+  font-size:14px;
+}
+
+/* jp-kr-step1 */
+
+@media(max-width:680px){
+  .promo{padding:20px 20px;border-radius:22px}
+  .promo h3{font-size:24px;margin-bottom:10px}
+  .promo p{font-size:14px;line-height:1.58}
+  .offer-vip{gap:12px}
+  .mobile-fixed-cta a{font-size:15px;padding:13px 18px}
+  .mobile-fixed-cta span{font-size:11px}
+}
+
+
+/* jp-kr-step2 */
+.locale-notice{
+  margin-top:16px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:13px 15px;
+  box-shadow:0 10px 24px rgba(16,24,40,.04);
+}
+.locale-notice strong{
+  display:block;
+  font-size:13px;
+  color:#111827;
+  margin-bottom:4px;
+}
+.locale-notice span{
+  display:block;
+  font-size:12px;
+  line-height:1.55;
+  color:#667085;
+}
+.legal-links{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:10px;
+}
+.legal-links a{
+  color:#475467;
+  font-weight:800;
+}
+html[lang="ja"] h1{letter-spacing:-1.2px}
+html[lang="ja"] .btn-main{background:#0a7cff}
+html[lang="ja"] .market-board{box-shadow:0 18px 44px rgba(16,24,40,.07)}
+html[lang="ko"] .btn-main{background:#0877ff;box-shadow:0 20px 38px rgba(8,119,255,.28)}
+html[lang="ko"] .chip.active{background:#0877ff}
+@media(max-width:680px){
+  .locale-notice{margin-top:12px;padding:11px 13px;border-radius:16px}
+  .locale-notice strong{font-size:12px}
+  .locale-notice span{font-size:11px}
+  .legal-links{margin-top:12px}
+  html[lang="ko"] .question{font-size:16px}
+  html[lang="ja"] .question{font-size:15px}
+  html[lang="ko"] h1{font-size:33px}
+  html[lang="ja"] h1{font-size:31px}
+}
+
+
+/* jp-kr-step3 */
+.quick-points{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:-8px 0 18px;
+}
+.quick-points span{
+  background:#fff;
+  border:1px solid var(--line);
+  color:#475467;
+  border-radius:999px;
+  padding:8px 10px;
+  font-size:12px;
+  font-weight:850;
+}
+.hero-mini{
+  display:none;
+  color:#667085;
+  font-size:12px;
+  font-weight:750;
+  margin-top:-4px;
+  margin-bottom:10px;
+}
+@media(max-width:680px){
+  .hero{padding-top:10px;padding-bottom:18px}
+  .hero-grid{gap:14px}
+  .eyebrow{font-size:11px;margin-bottom:9px}
+  h1{font-size:30px;line-height:1.08;margin-bottom:10px;letter-spacing:-.9px}
+  .lead{font-size:14px;line-height:1.48;margin-bottom:14px}
+  .quick-points{margin:-4px 0 14px;gap:6px}
+  .quick-points span{font-size:11px;padding:7px 9px}
+  .cta{gap:8px;margin-bottom:8px}
+  .btn{padding:13px 16px}
+  .btn-main{font-size:15px}
+  .btn-light{font-size:14px;background:#f9fbff}
+  .hero-mini{display:block}
+  .locale-notice{margin-top:10px}
+  .market-board{padding:12px;border-radius:22px}
+  .board-top{margin-bottom:8px}
+  .board-title strong{font-size:16px}
+  .board-title span{display:none}
+  .live{font-size:11px;padding:7px 9px}
+  .chips{padding-bottom:8px}
+  .chip{font-size:12px;padding:8px 10px;border-radius:10px}
+  #marketCards .mcard:nth-child(n+3){display:none}
+  .mcard{min-height:158px;padding:12px;border-radius:18px}
+  .micon{width:34px;height:34px;border-radius:11px;font-size:18px}
+  .question{font-size:14px;line-height:1.28}
+  .mmeta{font-size:11px}
+  .choice{padding:8px 9px;font-size:12px;border-radius:10px}
+  .choice em{font-size:10px}
+  .enter-card a{padding:13px 14px;border-radius:13px}
+  .promo{padding:17px 18px}
+  .promo h3{font-size:22px}
+  .safe{padding:18px;border-radius:22px}
+  .safe h3{font-size:18px}
+  .safe p{font-size:13px;line-height:1.55}
+}
+@media(max-width:390px){
+  h1{font-size:28px}
+  .lead{font-size:13.5px}
+  .quick-points span{font-size:10.5px}
+}
+
+
+/* jp-kr-step4 */
+.visual-line{
+  display:inline-flex;
+  align-items:center;
+  color:#667085;
+  font-size:12px;
+  font-weight:800;
+  margin:-7px 0 16px;
+  padding:8px 11px;
+  border-radius:999px;
+  background:rgba(255,255,255,.72);
+  border:1px solid var(--line);
+}
+html[lang="ja"] body{
+  background:
+    radial-gradient(circle at 80% 4%, rgba(10,124,255,.08), transparent 26%),
+    #f5f7fb;
+}
+html[lang="ja"] .logo{
+  background:linear-gradient(135deg,#1f74d1,#79b7ff);
+}
+html[lang="ja"] .btn-main{
+  background:#126fd3;
+  box-shadow:0 14px 28px rgba(18,111,211,.18);
+}
+html[lang="ja"] .btn-light{
+  background:#fff;
+}
+html[lang="ja"] .market-board,
+html[lang="ja"] .promo,
+html[lang="ja"] .safe,
+html[lang="ja"] .locale-notice{
+  box-shadow:0 14px 34px rgba(16,24,40,.055);
+}
+html[lang="ja"] .chip.active{
+  background:#126fd3;
+}
+html[lang="ja"] .micon{
+  background:linear-gradient(135deg,#1f74d1,#8bc4ff);
+}
+html[lang="ja"] .quick-points span{
+  background:#fff;
+}
+html[lang="ja"] .mobile-fixed-cta a{
+  background:#126fd3;
+}
+
+html[lang="ko"] body{
+  background:
+    radial-gradient(circle at 50% -4%, rgba(8,119,255,.14), transparent 30%),
+    linear-gradient(180deg,#f2f7ff 0%,#f4f7fb 46%,#f3f6fb 100%);
+}
+html[lang="ko"] .logo{
+  background:linear-gradient(135deg,#006dff,#5ee1ff);
+}
+html[lang="ko"] .btn-main{
+  background:linear-gradient(135deg,#006dff,#00a3ff);
+  box-shadow:0 20px 42px rgba(0,109,255,.28);
+}
+html[lang="ko"] .btn-main:hover{
+  background:linear-gradient(135deg,#005fe0,#0094eb);
+}
+html[lang="ko"] .market-board{
+  border-color:#dbeafe;
+  box-shadow:0 22px 54px rgba(0,109,255,.12);
+}
+html[lang="ko"] .chip.active{
+  background:linear-gradient(135deg,#006dff,#00a3ff);
+}
+html[lang="ko"] .micon{
+  background:linear-gradient(135deg,#006dff,#00c2ff);
+}
+html[lang="ko"] .quick-points span{
+  border-color:#dbeafe;
+  background:#ffffff;
+}
+html[lang="ko"] .mobile-fixed-cta{
+  border-color:#dbeafe;
+  box-shadow:0 20px 50px rgba(0,109,255,.2);
+}
+html[lang="ko"] .mobile-fixed-cta a{
+  background:linear-gradient(135deg,#006dff,#00a3ff);
+}
+@media(max-width:680px){
+  .visual-line{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    margin:-4px 0 12px;
+    font-size:11px;
+    padding:7px 10px;
+  }
+  html[lang="ja"] .market-board{
+    border-radius:22px;
+  }
+  html[lang="ko"] .market-board{
+    border-radius:24px;
+  }
+  html[lang="ko"] .btn-main{
+    transform:translateZ(0);
+  }
+  html[lang="ko"] .btn-main:active{
+    transform:scale(.985);
+  }
+}
+
+
+/* final-v5 */
+@media(max-width:680px){
+  .mobile-fixed-cta{
+    padding:9px;
+    bottom:10px;
+  }
+  .mobile-fixed-cta a{
+    min-width:142px;
+    text-align:center;
+  }
+  .mobile-fixed-cta span{
+    letter-spacing:.01em;
+  }
+}
+@media(min-width:681px){
+  .mobile-fixed-cta{display:none!important}
+}
+
+
+/* more-content-v6 */
+.offer-vip{grid-template-columns:repeat(3,minmax(0,1fr))}
+.promo.more{background:linear-gradient(135deg,#fff,#eef9f3)}
+.more-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.more-tags span{display:inline-flex;align-items:center;padding:8px 10px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:12px;font-weight:850;color:#475467}
+html[lang="ja"] .promo.more{background:linear-gradient(135deg,#fff,#eef6ff)}
+html[lang="ko"] .promo.more{background:linear-gradient(135deg,#fff,#eef7ff)}
+@media(max-width:1180px){.offer-vip{grid-template-columns:1fr 1fr}.promo.more{grid-column:1/-1}}
+@media(max-width:1020px){.offer-vip{grid-template-columns:1fr}}
+@media(max-width:680px){.more-tags{gap:6px;margin-top:12px}.more-tags span{font-size:11px;padding:7px 9px}.promo.more h3{font-size:22px}}
+
+
+/* v8-no-market-experience */
+.conversion-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:950;
+  color:#0a62c9;
+  background:#eef6ff;
+  border:1px solid #d8eaff;
+  border-radius:999px;
+  padding:8px 11px;
+  margin:0 0 12px;
+}
+.conversion-badge:before{content:"●";color:#14b866;font-size:10px}
+.more-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px}
+.more-action{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px;font-weight:950;color:#1d2939;transition:.18s ease}
+.more-action:hover{transform:translateY(-1px);border-color:#b9dcff;box-shadow:0 12px 26px rgba(10,124,255,.10)}
+.more-action i{width:30px;height:30px;border-radius:11px;display:grid;place-items:center;font-style:normal;background:#edf5ff}
+.more-cta{margin-top:14px;display:flex}
+.more-cta a{width:100%;text-align:center;background:#101828;color:#fff;border-radius:16px;padding:13px 14px;font-weight:950}
+html[lang="ko"] .conversion-badge{background:#eaf4ff;border-color:#c9e5ff;color:#005fe0}
+html[lang="ko"] .more-action{border-color:#dbeafe}
+html[lang="ko"] .more-action i{background:linear-gradient(135deg,#e7f2ff,#dffbff)}
+html[lang="ko"] .more-cta a{background:linear-gradient(135deg,#006dff,#00a3ff);box-shadow:0 16px 34px rgba(0,109,255,.22)}
+html[lang="ko"] .promo.more{border-color:#dbeafe;box-shadow:0 18px 44px rgba(0,109,255,.11)}
+html[lang="ja"] .conversion-badge{background:#f4f8ff;border-color:#d9e8fb;color:#126fd3}
+html[lang="ja"] .more-cta a{background:#126fd3}
+@media(max-width:680px){
+  .section{padding:24px 0}
+  .conversion-badge{width:fit-content;font-size:11px;padding:7px 10px;margin-bottom:10px}
+  .more-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
+  .more-action{padding:10px;border-radius:14px;font-size:12px;gap:7px}
+  .more-action i{width:26px;height:26px;border-radius:9px;font-size:14px}
+  .more-cta{margin-top:12px}
+  .more-cta a{padding:12px;border-radius:14px;font-size:14px}
+  html[lang="ko"] .mobile-fixed-cta{padding:8px}
+  html[lang="ko"] .mobile-fixed-cta a{min-width:156px;font-size:15px;padding:14px 18px}
+}
+
+</style>
+</head>
+<body id="top">
+<header class="top"><div class="wrap nav"><a class="brand" href="#top"><div class="logo">1W</div><div class="brand-text"><strong>1WIN</strong><span data-i18n="brandSub">스포츠 예측 마켓</span></div></a><nav class="nav-links"><a data-i18n="navMarket" href="#markets">마켓</a><a data-i18n="navHow" href="#markets">혜택</a><a data-i18n="navOffer" href="#offer">혜택</a><a data-i18n="navVip" href="#vip">VIP</a></nav><div class="nav-actions"><span class="age" data-i18n="age">18+</span><div class="language"><select aria-label="Language" id="langSelect"><option value="zh-CN">简体中文</option><option value="zh-Hant">繁體中文</option><option value="en">English</option><option value="en-AU">English AU</option><option value="ja">日本語</option><option selected="" value="ko">한국어</option><option value="vi">Tiếng Việt</option><option value="id">Indonesia</option></select></div></div></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow"><span class="spark"></span><span data-i18n="heroTag">SPORTS MARKET</span></div><h1 data-i18n="heroTitle">스포츠 예측 마켓</h1><p class="lead" data-i18n="heroLead">e스포츠, 축구, 야구, 월드컵 주요 마켓을 빠르게 확인하고 실시간 정보로 이동하세요.</p>
+<div class="quick-points">
+<span data-i18n="quick1">e스포츠·축구</span>
+<span data-i18n="quick2">실시간 마켓</span>
+<span data-i18n="quick3">18+ 약관 적용</span>
+</div>
+<div class="cta"><a class="btn btn-main js-target" data-i18n="primary" href="https://1win28.com">마켓 바로 보기</a><a class="btn btn-light" data-i18n="secondary" href="#vip">혜택 보기</a></div>
+<div class="hero-mini" data-i18n="heroMini">인기 마켓을 빠르게 확인하세요.</div>
+<div class="trust"><span data-i18n="trust1">한국어 지원</span><span data-i18n="trust2">e스포츠·축구</span><span data-i18n="trust3">약관 적용</span><span data-i18n="trust4">18+</span></div>
+<div class="locale-notice">
+<strong data-i18n="noticeTitle">이용 전 확인</strong>
+<span data-i18n="noticeText">성인 이용자 대상 페이지입니다. 허용 지역, 대상 조건, 적용 규정은 플랫폼 약관을 따릅니다.</span>
+</div>
+</div><aside class="market-board" id="markets"><div class="board-top"><div class="board-title"><strong data-i18n="panelTitle">실시간 인기 마켓</strong><span data-i18n="panelSub">e스포츠 · 축구 · 야구 · 월드컵</span></div><div class="live">实时</div></div><div class="chips" role="tablist"><button class="chip active" data-i18n="catTop">인기</button><button class="chip" data-i18n="catWorldCup">월드컵</button><button class="chip" data-i18n="catSports">스포츠</button><button class="chip" data-i18n="catCrypto">크립토</button><button class="chip" data-i18n="catCulture">이슈</button><button class="chip" data-i18n="catTech">테크</button><button class="chip" data-i18n="catEsports">e스포츠</button><button class="chip" data-i18n="catSpecial">특별 기획</button><button class="chip" data-i18n="cat18">18+</button></div><div class="cards" id="marketCards"><article class="mcard"><div class="mhead"><div class="micon">🏆</div><div><div class="question">한국 e스포츠 팀이 국제 대회 결승에 진출할까?</div><div class="mmeta">e스포츠 · LoL · e스포츠</div></div></div><div class="choices"><div class="choice yes"><span>진출</span><em>방향 A</em></div><div class="choice no"><span>미진출</span><em>방향 B</em></div></div><div class="card-foot"><span>마켓</span><span>자세히 보기 ›</span></div></article><article class="mcard"><div class="mhead"><div class="micon">🌍</div><div><div class="question">한국 대표팀은 다음 국제 대회에서 조별리그를 통과할까?</div><div class="mmeta">축구 · 국가대표 · 대표팀</div></div></div><div class="choices"><div class="choice yes"><span>통과</span><em>방향 A</em></div><div class="choice no"><span>미통과</span><em>방향 B</em></div></div><div class="card-foot"><span>마켓</span><span>자세히 보기 ›</span></div></article><article class="mcard"><div class="mhead"><div class="micon">⚽</div><div><div class="question">한국 주요 선수가 다음 큰 대회에서 득점을 기록할까?</div><div class="mmeta">축구 · 선수 · 선수 성과</div></div></div><div class="choices"><div class="choice yes"><span>예</span><em>방향 A</em></div><div class="choice no"><span>아니오</span><em>방향 B</em></div></div><div class="card-foot"><span>마켓</span><span>자세히 보기 ›</span></div></article><article class="mcard"><div class="mhead"><div class="micon">⭐</div><div><div class="question">인기 야구 팀이 시즌 상위권을 유지할까?</div><div class="mmeta">야구 · KBO · 야구</div></div></div><div class="choices"><div class="choice yes"><span>유지</span><em>방향 A</em></div><div class="choice no"><span>하락</span><em>방향 B</em></div></div><div class="card-foot"><span>마켓</span><span>자세히 보기 ›</span></div></article><article class="mcard"><div class="mhead"><div class="micon">🎮</div><div><div class="question">아시아 팀 중 가장 좋은 성적을 낼 팀은?</div><div class="mmeta">월드컵 · 아시아 · 지역 테마</div></div></div><div class="choices"><div class="choice yes"><span>한국</span><em>방향 A</em></div><div class="choice no"><span>일본</span><em>방향 B</em></div></div><div class="card-foot"><span>마켓</span><span>자세히 보기 ›</span></div></article><article class="mcard"><div class="mhead"><div class="micon">₿</div><div><div class="question">주요 크립토 자산은 다음 분기 상승세를 보일까?</div><div class="mmeta">크립토 · 시장 트렌드</div></div></div><div class="choices"><div class="choice yes"><span>상승</span><em>방향 A</em></div><div class="choice no"><span>횡보</span><em>방향 B</em></div></div><div class="card-foot"><span>마켓</span><span>자세히 보기 ›</span></div></article></div><div class="enter-card"><a class="js-target" data-i18n="primary" href="https://1win28.com">마켓 바로 보기</a></div></aside></div></section>
+<section class="section"><div class="wrap offer-vip">
+<div class="promo good" id="offer">
+<div class="kicker" data-i18n="navOffer">혜택</div>
+<h3 data-i18n="offerTitle">신규 회원 혜택</h3>
+<p data-i18n="offerText">첫 입금 최대 500% + 500회 프리 스핀. 대상 조건, 지역 제한, 이용 조건은 프로모션 약관을 따릅니다.</p>
+</div>
+<div class="promo more" id="more-content">
+<div class="conversion-badge" data-i18n="conversionBadge">빠른 이동</div>
+<h3 data-i18n="moreTitle">스포츠·엔터테인먼트 바로가기</h3>
+<p data-i18n="moreText">플랫폼에서 스포츠, e스포츠, 이벤트, VIP 혜택을 빠르게 확인하고 관심 있는 영역으로 바로 이동할 수 있습니다.</p>
+<div class="more-actions">
+<a class="more-action js-target" href="https://1win28.com"><i>⚽</i><span data-i18n="moreTag1">스포츠</span></a>
+<a class="more-action js-target" href="https://1win28.com"><i>🎮</i><span data-i18n="moreTag2">e스포츠</span></a>
+<a class="more-action js-target" href="https://1win28.com"><i>🎁</i><span data-i18n="moreTag3">이벤트</span></a>
+<a class="more-action js-target" href="https://1win28.com"><i>★</i><span data-i18n="moreTag4">VIP 혜택</span></a>
+</div>
+<div class="more-cta"><a class="js-target" data-i18n="moreCta" href="https://1win28.com">바로 확인하기</a></div>
+</div>
+<div class="promo vip" id="vip">
+<div class="kicker" data-i18n="navVip">VIP</div>
+<h3 data-i18n="vipTitle">VIP 회원 혜택</h3>
+<p data-i18n="vipText">VIP 회원은 호텔 혜택, 럭셔리 캠페인, 전담 지원 서비스를 확인할 수 있습니다. 모든 혜택은 약관과 지역 정책을 따릅니다.</p>
+</div>
+</div></section>
+<section class="section"><div class="wrap safe"><div class="safe-mark">18+</div><div><h3 data-i18n="safeTitle">책임 있는 이용 안내</h3><p data-i18n="safeText">마켓 정보와 프로모션은 수익을 보장하지 않습니다. 허용 지역과 약관을 확인하고 책임 있게 이용해 주세요.</p></div></div></section>
+</main><footer class="foot"><div class="wrap foot-grid"><div>© <span id="year">2026</span> 1WIN · <span data-i18n="footerNote">1WIN 스포츠 예측 마켓 공식 입장 페이지.</span></div>
+<div class="legal-links">
+<a data-i18n="termsLink" href="terms.html">이용약관</a>
+<a data-i18n="privacyLink" href="privacy.html">개인정보</a>
+<a data-i18n="responsibleLink" href="responsible.html">책임 이용</a>
+</div>
+<div class="foot-links"><a class="js-target" data-i18n="footerEnter" href="https://1win28.com">마켓 확인하기</a><a data-i18n="footerTop" href="#top">맨 위로</a></div></div></footer>
+<script>
+const TARGET_URL = 'https://1win28.com';
+const translations = {"zh-CN": {"brandSub": "全球体育预测市场", "navMarket": "预测市场", "navHow": "活动", "navOffer": "优惠", "navVip": "VIP", "age": "18+", "heroTag": "SPORTS PREDICTION MARKET", "heroTitle": "全球体育预测市场", "heroLead": "浏览热门赛事、球员、电竞与加密主题，进入平台查看实时市场。", "primary": "立即进入预测市场", "secondary": "查看活动", "trust1": "市场入口清晰", "trust2": "多品类主题", "trust3": "条款适用", "trust4": "理性娱乐", "panelTitle": "热门市场看板", "panelSub": "体育 · 电竞 · 加密 · 热门事件", "catTop": "Top", "catWorldCup": "世界杯", "catSports": "体育", "catCrypto": "加密", "catCulture": "文化", "catTech": "科技", "catEsports": "电子竞技", "catSpecial": "1W 特别项目", "cat18": "18+", "offerTitle": "新用户欢迎礼遇", "offerText": "首充最高 500% + 500 次免费轮转。具体资格、地区限制、活动周期、流水要求和适用产品以平台活动条款为准。", "vipTitle": "VIP 会员权益", "vipText": "合资格会员可查看五星级酒店礼遇、豪车活动资格、专属经理服务和优先支持。所有权益以活动规则和地区政策为准。", "safeTitle": "仅限合法地区与成年用户", "safeText": "本页面仅面向当地法律允许地区的成年用户。预测市场和优惠活动不代表收益承诺，请理性参与并仔细阅读条款、隐私政策及责任娱乐说明。", "footerNote": "1WIN 全球体育预测市场入口页。", "footerTop": "返回顶部", "footerEnter": "进入平台", "yesLabel": "是", "noLabel": "否", "marketFoot": "市场", "detailFoot": "查看详情 ›", "noticeTitle": "地区规则与责任娱乐", "noticeText": "仅限法律允许地区的成年用户访问。活动资格、地区限制和适用规则以平台条款为准。", "termsLink": "条款", "privacyLink": "隐私", "responsibleLink": "责任娱乐", "quick1": "热门赛事", "quick2": "实时市场", "quick3": "18+ 条款适用", "heroMini": "选择主题后进入平台查看实时市场。", "visualLine": "热门主题 · 实时入口 · 条款适用", "moreTitle": "更多体育与娱乐入口", "moreText": "进入平台后可继续查看体育、电子竞技、热门活动和会员专区，快速切换到感兴趣的内容。", "moreTag1": "体育赛事", "moreTag2": "电竞专区", "moreTag3": "热门活动", "moreTag4": "VIP专区", "conversionBadge": "快速入口", "moreCta": "查看更多内容", "stickyNote": "18+ · 条款适用"}, "zh-Hant": {"brandSub": "全球體育預測市場", "navMarket": "預測市場", "navHow": "活動", "navOffer": "優惠", "navVip": "VIP", "age": "18+", "heroTag": "SPORTS PREDICTION MARKET", "heroTitle": "全球體育預測市場", "heroLead": "瀏覽熱門賽事、球員、電競與加密主題，進入平台查看即時市場。", "primary": "立即進入預測市場", "secondary": "查看活動", "trust1": "市場入口清晰", "trust2": "多品類主題", "trust3": "條款適用", "trust4": "理性娛樂", "panelTitle": "熱門市場看板", "panelSub": "體育 · 電競 · 加密 · 熱門事件", "catTop": "Top", "catWorldCup": "世界盃", "catSports": "體育", "catCrypto": "加密", "catCulture": "文化", "catTech": "科技", "catEsports": "電子競技", "catSpecial": "1W 特別項目", "cat18": "18+", "offerTitle": "新用戶歡迎禮遇", "offerText": "首充最高 500% + 500 次免費輪轉。具體資格、地區限制、活動週期、流水要求和適用產品以平台活動條款為準。", "vipTitle": "VIP 會員權益", "vipText": "合資格會員可查看五星級酒店禮遇、豪車活動資格、專屬經理服務和優先支持。所有權益以活動規則和地區政策為準。", "safeTitle": "僅限合法地區與成年用戶", "safeText": "本頁面僅面向當地法律允許地區的成年用戶。預測市場和優惠活動不代表收益承諾，請理性參與並仔細閱讀條款、私隱政策及責任娛樂說明。", "footerNote": "1WIN 全球體育預測市場入口頁。", "footerTop": "返回頂部", "footerEnter": "進入平台", "yesLabel": "是", "noLabel": "否", "marketFoot": "市場", "detailFoot": "查看詳情 ›", "noticeTitle": "地區規則與責任娛樂", "noticeText": "僅限法律允許地區的成年用戶訪問。活動資格、地區限制和適用規則以平台條款為準。", "termsLink": "條款", "privacyLink": "私隱", "responsibleLink": "責任娛樂", "quick1": "熱門賽事", "quick2": "即時市場", "quick3": "18+ 條款適用", "heroMini": "選擇主題後進入平台查看即時市場。", "visualLine": "熱門主題 · 即時入口 · 條款適用", "moreTitle": "更多體育與娛樂入口", "moreText": "進入平台後可繼續查看體育、電子競技、熱門活動和會員專區，快速切換到感興趣的內容。", "moreTag1": "體育賽事", "moreTag2": "電競專區", "moreTag3": "熱門活動", "moreTag4": "VIP專區", "conversionBadge": "快速入口", "moreCta": "查看更多內容", "stickyNote": "18+ · 條款適用"}, "en": {"brandSub": "Global sports prediction markets", "navMarket": "Markets", "navHow": "Offers", "navOffer": "Offer", "navVip": "VIP", "age": "18+", "heroTag": "SPORTS PREDICTION MARKET", "heroTitle": "Sports prediction markets", "heroLead": "Browse trending sports, player, esports and crypto themes, then enter the platform for live market views.", "primary": "View markets now", "secondary": "View offers", "trust1": "Clear market entry", "trust2": "Multi-category topics", "trust3": "Terms apply", "trust4": "Play responsibly", "panelTitle": "Trending Markets Board", "panelSub": "Sports · Esports · Crypto · Major events", "catTop": "Top", "catWorldCup": "World Cup", "catSports": "Sports", "catCrypto": "Crypto", "catCulture": "Culture", "catTech": "Tech", "catEsports": "Esports", "catSpecial": "1W Specials", "cat18": "18+", "offerTitle": "New Player Welcome Package", "offerText": "Up to 500% first deposit bonus + 500 free spins. Eligibility, regional limits, campaign period, wagering requirements and eligible products follow platform promotion terms.", "vipTitle": "VIP Member Rewards", "vipText": "Eligible members can view five-star hotel benefits, luxury car event eligibility, dedicated manager service and priority support. All benefits follow campaign rules and regional policies.", "safeTitle": "Legal regions and adult users only", "safeText": "This page is intended only for adult users in locations where local laws permit such services. Prediction markets and promotions are not income promises. Participate responsibly and read the terms, privacy policy and responsible entertainment information.", "footerNote": "1WIN global sports prediction market entry page.", "footerTop": "Back to top", "footerEnter": "Enter platform", "yesLabel": "Yes", "noLabel": "No", "marketFoot": "Market", "detailFoot": "View details ›", "noticeTitle": "Regional rules and responsible entertainment", "noticeText": "Access is intended only for adult users in permitted regions. Eligibility, regional limits and applicable rules are subject to platform terms.", "termsLink": "Terms", "privacyLink": "Privacy", "responsibleLink": "Responsible play", "quick1": "Trending sports", "quick2": "Live markets", "quick3": "18+ Terms apply", "heroMini": "Pick a theme and continue to live markets.", "visualLine": "Trending themes · Live access · Terms apply", "moreTitle": "More sports and entertainment access", "moreText": "Continue inside the platform to explore sports, esports, campaigns and member areas with faster shortcuts to the content that matters.", "moreTag1": "Sports", "moreTag2": "Esports", "moreTag3": "Campaigns", "moreTag4": "VIP area", "conversionBadge": "Quick access", "moreCta": "Explore more", "stickyNote": "18+ · Terms apply"}, "en-AU": {"brandSub": "Global sports prediction markets", "navMarket": "Markets", "navHow": "Offers", "navOffer": "Offer", "navVip": "VIP", "age": "18+", "heroTag": "SPORTS PREDICTION MARKET", "heroTitle": "Sports prediction markets", "heroLead": "Browse trending sports, player, esports and crypto themes, then enter the platform for live market views.", "primary": "View markets now", "secondary": "View offers", "trust1": "Clear market entry", "trust2": "Multi-category topics", "trust3": "Terms apply", "trust4": "Play responsibly", "panelTitle": "Trending Markets Board", "panelSub": "Sports · Esports · Crypto · Major events", "catTop": "Top", "catWorldCup": "World Cup", "catSports": "Sports", "catCrypto": "Crypto", "catCulture": "Culture", "catTech": "Tech", "catEsports": "Esports", "catSpecial": "1W Specials", "cat18": "18+", "offerTitle": "New Player Welcome Package", "offerText": "Up to 500% first deposit bonus + 500 free spins. Eligibility, regional limits, campaign period, wagering requirements and eligible products follow platform promotion terms.", "vipTitle": "VIP Member Rewards", "vipText": "Eligible members can view five-star hotel benefits, luxury car event eligibility, dedicated manager service and priority support. All benefits follow campaign rules and regional policies.", "safeTitle": "Legal regions and adult users only", "safeText": "This page is intended only for adult users in locations where local laws permit such services. Prediction markets and promotions are not income promises. Participate responsibly and read the terms, privacy policy and responsible entertainment information.", "footerNote": "1WIN global sports prediction market entry page.", "footerTop": "Back to top", "footerEnter": "Enter platform", "yesLabel": "Yes", "noLabel": "No", "marketFoot": "Market", "detailFoot": "View details ›", "noticeTitle": "Regional rules and responsible entertainment", "noticeText": "Access is intended only for adult users in permitted regions. Eligibility, regional limits and applicable rules are subject to platform terms.", "termsLink": "Terms", "privacyLink": "Privacy", "responsibleLink": "Responsible play", "quick1": "Trending sports", "quick2": "Live markets", "quick3": "18+ Terms apply", "heroMini": "Pick a theme and continue to live markets.", "visualLine": "Trending themes · Live access · Terms apply", "moreTitle": "More sports and entertainment access", "moreText": "Continue inside the platform to explore sports, esports, campaigns and member areas with faster shortcuts to the content that matters.", "moreTag1": "Sports", "moreTag2": "Esports", "moreTag3": "Campaigns", "moreTag4": "VIP area", "conversionBadge": "Quick access", "moreCta": "Explore more", "stickyNote": "18+ · Terms apply"}, "ja": {"brandSub": "スポーツ予測マーケット", "navMarket": "マーケット", "navHow": "特典", "navOffer": "特典", "navVip": "VIP", "age": "18+", "heroTag": "SPORTS MARKET", "heroTitle": "スポーツ予測マーケット", "heroLead": "サッカー、日本代表、野球、eスポーツの注目テーマを見やすく整理。対象地域のルールに従って、マーケット情報を確認できます。", "primary": "マーケットを見る", "secondary": "特典を確認", "trust1": "日本語対応", "trust2": "注目スポーツ", "trust3": "規約適用", "trust4": "18歳以上", "panelTitle": "注目テーマ", "panelSub": "日本代表 · 野球 · サッカー · eスポーツ", "catTop": "注目", "catWorldCup": "W杯", "catSports": "スポーツ", "catCrypto": "暗号資産", "catCulture": "話題", "catTech": "テック", "catEsports": "eスポーツ", "catSpecial": "特別企画", "cat18": "18+", "offerTitle": "新規ユーザー特典", "offerText": "初回入金最大500% + 500回フリースピン。対象条件、地域制限、利用条件はプロモーション規約に従います。", "vipTitle": "VIPメンバー特典", "vipText": "対象メンバーはホテル特典、ラグジュアリーキャンペーン、専属サポートを確認できます。すべての特典は規約と地域ポリシーに従います。", "safeTitle": "責任ある利用と地域ルール", "safeText": "マーケット情報やキャンペーンは収益を保証するものではありません。利用可能地域と規約を確認し、責任を持ってご利用ください。", "footerNote": "1WIN スポーツ予測マーケット公式入口。", "footerTop": "トップへ戻る", "footerEnter": "マーケットを見る", "yesLabel": "方向 A", "noLabel": "方向 B", "marketFoot": "マーケット", "detailFoot": "詳細を見る ›", "noticeTitle": "安心して確認するために", "noticeText": "18歳以上の成人ユーザー向けです。利用可能地域、対象条件、適用ルールはプラットフォーム規約に従います。", "termsLink": "利用規約", "privacyLink": "プライバシー", "responsibleLink": "責任ある利用", "quick1": "注目スポーツ", "quick2": "リアルタイム", "quick3": "18歳以上", "heroMini": "気になるテーマを選んで確認。", "visualLine": "注目テーマ · 規約適用 · すばやく確認", "moreTitle": "スポーツ・エンタメをすばやく確認", "moreText": "プラットフォーム内でスポーツ、eスポーツ、注目イベント、VIP特典をすばやく確認できます。", "moreTag1": "スポーツ", "moreTag2": "eスポーツ", "moreTag3": "注目イベント", "moreTag4": "VIP特典", "conversionBadge": "クイックアクセス", "moreCta": "コンテンツを見る", "stickyNote": "18歳以上 · 利用可能地域のみ"}, "ko": {"brandSub": "스포츠 예측 마켓", "navMarket": "마켓", "navHow": "혜택", "navOffer": "혜택", "navVip": "VIP", "age": "18+", "heroTag": "SPORTS MARKET", "heroTitle": "스포츠 예측 마켓", "heroLead": "e스포츠, 축구, 야구, 월드컵 주요 마켓을 빠르게 확인하고 실시간 정보로 이동하세요.", "primary": "마켓 바로 보기", "secondary": "혜택 보기", "trust1": "한국어 지원", "trust2": "e스포츠·축구", "trust3": "약관 적용", "trust4": "18+", "panelTitle": "실시간 인기 마켓", "panelSub": "e스포츠 · 축구 · 야구 · 월드컵", "catTop": "인기", "catWorldCup": "월드컵", "catSports": "스포츠", "catCrypto": "크립토", "catCulture": "이슈", "catTech": "테크", "catEsports": "e스포츠", "catSpecial": "특별 기획", "cat18": "18+", "offerTitle": "신규 회원 혜택", "offerText": "첫 입금 최대 500% + 500회 프리 스핀. 대상 조건, 지역 제한, 이용 조건은 프로모션 약관을 따릅니다.", "vipTitle": "VIP 회원 혜택", "vipText": "VIP 회원은 호텔 혜택, 럭셔리 캠페인, 전담 지원 서비스를 확인할 수 있습니다. 모든 혜택은 약관과 지역 정책을 따릅니다.", "safeTitle": "책임 있는 이용 안내", "safeText": "마켓 정보와 프로모션은 수익을 보장하지 않습니다. 허용 지역과 약관을 확인하고 책임 있게 이용해 주세요.", "footerNote": "1WIN 스포츠 예측 마켓 공식 입장 페이지.", "footerTop": "맨 위로", "footerEnter": "마켓 확인하기", "yesLabel": "방향 A", "noLabel": "방향 B", "marketFoot": "마켓", "detailFoot": "자세히 보기 ›", "noticeTitle": "이용 전 확인", "noticeText": "성인 이용자 대상 페이지입니다. 허용 지역, 대상 조건, 적용 규정은 플랫폼 약관을 따릅니다.", "termsLink": "이용약관", "privacyLink": "개인정보", "responsibleLink": "책임 이용", "quick1": "e스포츠·축구", "quick2": "실시간 마켓", "quick3": "18+ 약관 적용", "heroMini": "인기 마켓을 빠르게 확인하세요.", "visualLine": "인기 마켓 · 빠른 이동 · 약관 적용", "moreTitle": "스포츠·엔터테인먼트 바로가기", "moreText": "플랫폼에서 스포츠, e스포츠, 이벤트, VIP 혜택을 빠르게 확인하고 관심 있는 영역으로 바로 이동할 수 있습니다.", "moreTag1": "스포츠", "moreTag2": "e스포츠", "moreTag3": "이벤트", "moreTag4": "VIP 혜택", "conversionBadge": "빠른 이동", "moreCta": "바로 확인하기", "stickyNote": "18+ · 실시간 마켓"}, "vi": {"brandSub": "Thị trường dự đoán thể thao toàn cầu", "navMarket": "Thị trường", "navHow": "Ưu đãi", "navOffer": "Ưu đãi", "navVip": "VIP", "age": "18+", "heroTag": "SPORTS PREDICTION MARKET", "heroTitle": "Thị trường dự đoán thể thao", "heroLead": "Xem nhanh các chủ đề thể thao, cầu thủ, esports và crypto nổi bật rồi vào nền tảng để xem thị trường trực tiếp.", "primary": "Vào thị trường dự đoán", "secondary": "Xem quyền lợi thành viên", "trust1": "Lối vào rõ ràng", "trust2": "Nhiều danh mục", "trust3": "Áp dụng điều khoản", "trust4": "Giải trí có trách nhiệm", "panelTitle": "Bảng thị trường nổi bật", "panelSub": "Thể thao · Esports · Crypto · Sự kiện lớn", "catTop": "Top", "catWorldCup": "World Cup", "catSports": "Thể thao", "catCrypto": "Crypto", "catCulture": "Văn hoá", "catTech": "Công nghệ", "catEsports": "Esports", "catSpecial": "Dự án 1W", "cat18": "18+", "offerTitle": "Gói chào mừng người dùng mới", "offerText": "Nạp đầu lên đến 500% + 500 vòng quay miễn phí. Điều kiện, giới hạn khu vực, thời gian, yêu cầu vòng cược và sản phẩm áp dụng theo điều khoản khuyến mãi của nền tảng.", "vipTitle": "Quyền lợi thành viên VIP", "vipText": "Thành viên đủ điều kiện có thể xem quyền lợi khách sạn 5 sao, tư cách tham gia sự kiện xe sang, quản lý riêng và hỗ trợ ưu tiên. Tất cả quyền lợi theo quy định chiến dịch và chính sách khu vực.", "safeTitle": "Chỉ khu vực hợp pháp và người dùng trưởng thành", "safeText": "Trang này chỉ dành cho người trưởng thành ở khu vực được pháp luật địa phương cho phép. Thị trường dự đoán và khuyến mãi không phải cam kết thu nhập. Hãy tham gia có trách nhiệm và đọc điều khoản, chính sách riêng tư, thông tin giải trí có trách nhiệm.", "footerNote": "Trang lối vào thị trường dự đoán thể thao toàn cầu 1WIN.", "footerTop": "Lên đầu trang", "footerEnter": "Vào nền tảng", "yesLabel": "Có", "noLabel": "Không", "marketFoot": "Thị trường", "detailFoot": "Xem chi tiết ›", "noticeTitle": "Quy định khu vực và giải trí có trách nhiệm", "noticeText": "Chỉ dành cho người trưởng thành tại khu vực được phép. Điều kiện, giới hạn khu vực và quy định áp dụng theo điều khoản nền tảng.", "termsLink": "Điều khoản", "privacyLink": "Quyền riêng tư", "responsibleLink": "Trách nhiệm", "quick1": "Thể thao nổi bật", "quick2": "Thị trường live", "quick3": "18+ Điều khoản", "heroMini": "Chọn chủ đề và xem thị trường trực tiếp.", "visualLine": "Chủ đề nổi bật · Truy cập live · Điều khoản", "moreTitle": "Lối vào thể thao và giải trí", "moreText": "Vào nền tảng để xem thể thao, esports, chiến dịch và khu vực thành viên với các lối tắt nhanh.", "moreTag1": "Thể thao", "moreTag2": "Esports", "moreTag3": "Sự kiện", "moreTag4": "VIP", "conversionBadge": "Truy cập nhanh", "moreCta": "Xem thêm", "stickyNote": "18+ · Điều khoản"}, "id": {"brandSub": "Pasar prediksi olahraga global", "navMarket": "Pasar", "navHow": "Promo", "navOffer": "Promo", "navVip": "VIP", "age": "18+", "heroTag": "SPORTS PREDICTION MARKET", "heroTitle": "Pasar prediksi olahraga", "heroLead": "Lihat tema sports, pemain, esports, dan crypto yang sedang tren, lalu masuk ke platform untuk melihat pasar live.", "primary": "Masuk ke Pasar Prediksi", "secondary": "Lihat Benefit Anggota", "trust1": "Akses pasar jelas", "trust2": "Banyak kategori", "trust3": "Syarat berlaku", "trust4": "Bermain bertanggung jawab", "panelTitle": "Papan Pasar Tren", "panelSub": "Sports · Esports · Crypto · Event besar", "catTop": "Top", "catWorldCup": "World Cup", "catSports": "Sports", "catCrypto": "Crypto", "catCulture": "Budaya", "catTech": "Teknologi", "catEsports": "Esports", "catSpecial": "1W Specials", "cat18": "18+", "offerTitle": "Paket Sambutan Pengguna Baru", "offerText": "Bonus deposit pertama hingga 500% + 500 free spins. Kelayakan, batas wilayah, periode kampanye, syarat turnover, dan produk yang berlaku mengikuti syarat promosi platform.", "vipTitle": "Benefit Anggota VIP", "vipText": "Anggota yang memenuhi syarat dapat melihat benefit hotel bintang lima, kelayakan event mobil mewah, layanan manajer khusus, dan dukungan prioritas. Semua benefit mengikuti aturan kampanye dan kebijakan wilayah.", "safeTitle": "Hanya wilayah legal dan pengguna dewasa", "safeText": "Halaman ini hanya ditujukan untuk pengguna dewasa di lokasi yang diizinkan oleh hukum setempat. Pasar prediksi dan promosi bukan janji pendapatan. Berpartisipasilah secara bertanggung jawab dan baca syarat, kebijakan privasi, serta informasi responsible entertainment.", "footerNote": "Halaman akses pasar prediksi olahraga global 1WIN.", "footerTop": "Kembali ke atas", "footerEnter": "Masuk platform", "yesLabel": "Ya", "noLabel": "Tidak", "marketFoot": "Pasar", "detailFoot": "Lihat detail ›", "noticeTitle": "Aturan wilayah dan responsible entertainment", "noticeText": "Hanya untuk pengguna dewasa di wilayah yang diizinkan. Kelayakan, batas wilayah, dan aturan berlaku mengikuti syarat platform.", "termsLink": "Syarat", "privacyLink": "Privasi", "responsibleLink": "Responsible play", "quick1": "Sports tren", "quick2": "Pasar live", "quick3": "18+ Syarat berlaku", "heroMini": "Pilih tema dan lanjut ke pasar live.", "visualLine": "Tema tren · Akses live · Syarat berlaku", "moreTitle": "Akses sports dan entertainment", "moreText": "Masuk ke platform untuk melihat sports, esports, campaign, dan area member dengan shortcut yang lebih cepat.", "moreTag1": "Sports", "moreTag2": "Esports", "moreTag3": "Campaign", "moreTag4": "VIP", "conversionBadge": "Akses cepat", "moreCta": "Lihat lainnya", "stickyNote": "18+ · Syarat"}};
+const marketCards = {"zh-CN": [{"cat": "世界杯 · 队伍", "q": "哪支欧洲球队将在 2026 世界杯中表现最好？", "a": "西班牙", "b": "英格兰", "meta": "热门赛事"}, {"cat": "世界杯 · 冠军", "q": "2026 年国际足联世界杯冠军预测", "a": "法国", "b": "巴西", "meta": "冠军市场"}, {"cat": "世界杯 · 球员", "q": "明星球员会在 2026 世界杯中打入点球吗？", "a": "是", "b": "否", "meta": "球员表现"}, {"cat": "足球 · 俱乐部", "q": "欧洲冠军赛热门球队预测", "a": "热门队伍", "b": "黑马队伍", "meta": "俱乐部赛事"}, {"cat": "电子竞技", "q": "热门电竞项目冠军方向预测", "a": "头号热门", "b": "挑战者", "meta": "电竞市场"}, {"cat": "加密 · 趋势", "q": "主流加密资产下季度趋势预测", "a": "上涨", "b": "震荡", "meta": "加密主题"}], "zh-Hant": [{"cat": "世界盃 · 隊伍", "q": "哪支歐洲球隊將在 2026 世界盃中表現最好？", "a": "西班牙", "b": "英格蘭", "meta": "熱門賽事"}, {"cat": "世界盃 · 冠軍", "q": "2026 年國際足總世界盃冠軍預測", "a": "法國", "b": "巴西", "meta": "冠軍市場"}, {"cat": "世界盃 · 球員", "q": "明星球員會在 2026 世界盃中射入十二碼嗎？", "a": "是", "b": "否", "meta": "球員表現"}, {"cat": "足球 · 俱樂部", "q": "歐洲冠軍賽熱門球隊預測", "a": "熱門隊伍", "b": "黑馬隊伍", "meta": "俱樂部賽事"}, {"cat": "電子競技", "q": "熱門電競項目冠軍方向預測", "a": "頭號熱門", "b": "挑戰者", "meta": "電競市場"}, {"cat": "加密 · 趨勢", "q": "主流加密資產下季度趨勢預測", "a": "上漲", "b": "震盪", "meta": "加密主題"}], "en": [{"cat": "World Cup · Teams", "q": "Which European team will perform best at the 2026 World Cup?", "a": "Spain", "b": "England", "meta": "Trending event"}, {"cat": "World Cup · Winner", "q": "2026 FIFA World Cup winner prediction", "a": "France", "b": "Brazil", "meta": "Winner market"}, {"cat": "World Cup · Player", "q": "Will a star player score from the penalty spot in 2026?", "a": "Yes", "b": "No", "meta": "Player performance"}, {"cat": "Football · Clubs", "q": "European championship club favourites", "a": "Favourite", "b": "Dark horse", "meta": "Club events"}, {"cat": "Esports", "q": "Champion direction for a trending esports title", "a": "Top seed", "b": "Challenger", "meta": "Esports market"}, {"cat": "Crypto · Trend", "q": "Major crypto asset trend for the next quarter", "a": "Uptrend", "b": "Range", "meta": "Crypto theme"}], "en-AU": [{"cat": "World Cup · Teams", "q": "Which European side will perform best at the 2026 World Cup?", "a": "Spain", "b": "England", "meta": "Trending event"}, {"cat": "World Cup · Winner", "q": "2026 FIFA World Cup winner prediction", "a": "France", "b": "Brazil", "meta": "Winner market"}, {"cat": "World Cup · Player", "q": "Will a star player score from the spot in 2026?", "a": "Yes", "b": "No", "meta": "Player performance"}, {"cat": "Football · Clubs", "q": "European championship club favourites", "a": "Favourite", "b": "Dark horse", "meta": "Club events"}, {"cat": "Esports", "q": "Champion direction for a trending esports title", "a": "Top seed", "b": "Challenger", "meta": "Esports market"}, {"cat": "Crypto · Trend", "q": "Major crypto asset trend for the next quarter", "a": "Uptrend", "b": "Range", "meta": "Crypto theme"}], "ja": [{"cat": "サッカー · 日本代表", "q": "日本代表は次の国際大会でグループ突破できる？", "a": "突破", "b": "未突破", "meta": "代表チーム"}, {"cat": "野球 · 国際大会", "q": "日本代表は国際野球大会で上位進出できる？", "a": "上位進出", "b": "難しい", "meta": "野球"}, {"cat": "ワールドカップ · アジア", "q": "アジア勢で最も好成績を残すチームは？", "a": "日本", "b": "韓国", "meta": "地域テーマ"}, {"cat": "欧州サッカー", "q": "欧州主要リーグで最も注目されるクラブは？", "a": "本命", "b": "ダークホース", "meta": "クラブ"}, {"cat": "eスポーツ", "q": "注目eスポーツ大会でアジアチームは決勝へ進む？", "a": "はい", "b": "いいえ", "meta": "eスポーツ"}, {"cat": "暗号資産", "q": "主要暗号資産は次四半期に上昇トレンドへ入る？", "a": "上昇", "b": "レンジ", "meta": "市場トレンド"}], "ko": [{"cat": "e스포츠 · LoL", "q": "한국 e스포츠 팀이 국제 대회 결승에 진출할까?", "a": "진출", "b": "미진출", "meta": "e스포츠"}, {"cat": "축구 · 국가대표", "q": "한국 대표팀은 다음 국제 대회에서 조별리그를 통과할까?", "a": "통과", "b": "미통과", "meta": "대표팀"}, {"cat": "축구 · 선수", "q": "한국 주요 선수가 다음 큰 대회에서 득점을 기록할까?", "a": "예", "b": "아니오", "meta": "선수 성과"}, {"cat": "야구 · KBO", "q": "인기 야구 팀이 시즌 상위권을 유지할까?", "a": "유지", "b": "하락", "meta": "야구"}, {"cat": "월드컵 · 아시아", "q": "아시아 팀 중 가장 좋은 성적을 낼 팀은?", "a": "한국", "b": "일본", "meta": "지역 테마"}, {"cat": "크립토", "q": "주요 크립토 자산은 다음 분기 상승세를 보일까?", "a": "상승", "b": "횡보", "meta": "시장 트렌드"}], "vi": [{"cat": "World Cup · Đội tuyển", "q": "Đội châu Âu nào sẽ thể hiện tốt nhất tại World Cup 2026?", "a": "Tây Ban Nha", "b": "Anh", "meta": "Sự kiện nổi bật"}, {"cat": "World Cup · Vô địch", "q": "Dự đoán nhà vô địch FIFA World Cup 2026", "a": "Pháp", "b": "Brazil", "meta": "Thị trường vô địch"}, {"cat": "World Cup · Cầu thủ", "q": "Một ngôi sao sẽ ghi bàn từ chấm phạt đền năm 2026?", "a": "Có", "b": "Không", "meta": "Hiệu suất cầu thủ"}, {"cat": "Bóng đá · CLB", "q": "Dự đoán đội được chú ý tại giải CLB châu Âu", "a": "Ứng viên", "b": "Ngựa ô", "meta": "Sự kiện CLB"}, {"cat": "Esports", "q": "Hướng vô địch cho tựa game esports nổi bật", "a": "Hạt giống đầu", "b": "Thách thức", "meta": "Thị trường esports"}, {"cat": "Crypto · Xu hướng", "q": "Xu hướng tài sản crypto lớn trong quý tới", "a": "Tăng", "b": "Đi ngang", "meta": "Chủ đề crypto"}], "id": [{"cat": "World Cup · Tim", "q": "Tim Eropa mana yang akan tampil terbaik di World Cup 2026?", "a": "Spanyol", "b": "Inggris", "meta": "Event tren"}, {"cat": "World Cup · Pemenang", "q": "Prediksi pemenang FIFA World Cup 2026", "a": "Prancis", "b": "Brasil", "meta": "Pasar pemenang"}, {"cat": "World Cup · Pemain", "q": "Akankah pemain bintang mencetak penalti pada 2026?", "a": "Ya", "b": "Tidak", "meta": "Performa pemain"}, {"cat": "Football · Klub", "q": "Prediksi klub favorit di kejuaraan Eropa", "a": "Favorit", "b": "Kuda hitam", "meta": "Event klub"}, {"cat": "Esports", "q": "Arah juara untuk judul esports yang sedang tren", "a": "Unggulan", "b": "Penantang", "meta": "Pasar esports"}, {"cat": "Crypto · Tren", "q": "Tren aset crypto utama untuk kuartal berikutnya", "a": "Naik", "b": "Sideways", "meta": "Tema crypto"}]};
+const aliases = {"zh": "zh-CN", "zh-Hans": "zh-CN", "zh-SG": "zh-CN", "zh-Hant": "zh-Hant", "zh-TW": "zh-Hant", "zh-HK": "zh-Hant", "en-AU": "en-AU", "en-NZ": "en-AU", "en-GB": "en", "en-US": "en", "ja": "ja", "ja-JP": "ja", "ko": "ko", "ko-KR": "ko", "vi": "vi", "vi-VN": "vi", "id": "id", "id-ID": "id", "in": "id"};
+const icons = ['🏆','🌍','⚽','⭐','🎮','₿'];
+
+function updateFixedCtaNote(lang){
+  const note=document.querySelector('.mobile-fixed-cta span');
+  if(!note)return;
+  const t=translations[lang]||translations['zh-CN'];
+  note.textContent=t.stickyNote||'18+ · Terms apply';
+}
+function resolveLang(raw){
+  if(!raw)return 'zh-CN';
+  if(translations[raw])return raw;
+  if(aliases[raw])return aliases[raw];
+  const base=String(raw).split('-')[0];
+  return aliases[base] || (translations[base] ? base : 'zh-CN');
+}
+function renderCards(lang){
+  const list=marketCards[lang]||marketCards['zh-CN'];
+  const t=translations[lang]||translations['zh-CN'];
+  const box=document.getElementById('marketCards');
+  if(!box)return;
+  box.innerHTML=list.map((c,i)=>`<article class="mcard"><div class="mhead"><div class="micon">${icons[i%icons.length]}</div><div><div class="question">${c.q}</div><div class="mmeta">${c.cat} · ${c.meta}</div></div></div><div class="choices"><div class="choice yes"><span>${c.a}</span><em>${t.yesLabel || 'A'}</em></div><div class="choice no"><span>${c.b}</span><em>${t.noLabel || 'B'}</em></div></div><div class="card-foot"><span>${t.marketFoot || 'Market'}</span><span>${t.detailFoot || 'View ›'}</span></div></article>`).join('');
+}
+function setLang(lang, options={}){
+  lang=resolveLang(lang);
+  const t=translations[lang]||translations['zh-CN'];
+  document.documentElement.lang=lang;
+  document.documentElement.setAttribute('data-locale',lang);
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    if(t[k])el.textContent=t[k];
+  });
+  const select=document.getElementById('langSelect');
+  if(select)select.value=lang;
+  document.title=lang==='ja'?'1WIN スポーツ予測マーケット':lang==='ko'?'1WIN 스포츠 예측 마켓':lang.startsWith('zh')?'1WIN 全球体育预测市场':'1WIN Sports Prediction Markets';
+  renderCards(lang);
+  updateFixedCtaNote(lang);
+  if(options.saveManual){
+    try{localStorage.setItem('siteLangManual',lang)}catch(e){}
+  }
+}
+function getBrowserLang(){
+  const list=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||'zh-CN'];
+  return list[0]||'zh-CN';
+}
+function initLanguage(forcedLang){
+  const params=new URLSearchParams(location.search);
+  let initial=forcedLang || params.get('lang');
+  if(!initial){
+    try{
+      localStorage.removeItem('siteLang');
+      initial=localStorage.getItem('siteLangManual');
+    }catch(e){}
+  }
+  if(!initial)initial=getBrowserLang();
+  setLang(initial,{saveManual:!!params.get('lang')});
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  const forced=document.documentElement.getAttribute('data-force-lang');
+  initLanguage(forced);
+  const select=document.getElementById('langSelect');
+  if(select)select.addEventListener('change',e=>setLang(e.target.value,{saveManual:true}));
+  document.querySelectorAll('.js-target').forEach(a=>a.href=TARGET_URL);
+  const year=document.getElementById('year');
+  if(year)year.textContent=new Date().getFullYear();
+  document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',()=>{
+    document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+  }));
+});
+
+</script>
+<div class="mobile-fixed-cta">
+<span>18+ · 실시간 마켓</span>
+<a class="js-target" data-i18n="primary" href="https://1win28.com">마켓 바로 보기</a>
+</div>
+</body>
+</html>
